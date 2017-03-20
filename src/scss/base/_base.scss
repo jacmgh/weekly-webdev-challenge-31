@@ -1,0 +1,32 @@
+body {
+    overflow-x: hidden;
+    background: #fff;
+    color: $color-text;
+    font-size: 1.8rem;
+    font-family: $font-family-primary;
+    @include screen-lg {
+        font-size: 1.6rem;
+    }
+}
+
+a {
+    color: $color-link;
+    text-decoration: none;
+
+    &:hover {
+        color: darken($color-link, 10%);
+    }
+}
+
+h2 {
+    margin-bottom: 3.3rem;
+    padding-bottom: 1.45rem;
+    background: url("../img/h2_hr.png") no-repeat center bottom;
+    font-size: 3.6rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+img {
+    max-width: 100%;
+}

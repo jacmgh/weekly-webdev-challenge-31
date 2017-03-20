@@ -1,0 +1,28 @@
+{
+    "name": "weekly-webdev-challenge-31",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "scripts": {
+        "dev:gulp": "gulp",
+        "dev:js": "webpack --progress --watch",
+        "start": "npm-run-all --parallel dev:gulp dev:js",
+        "build:gulp": "NODE_ENV=production gulp build",
+        "build:js": "NODE_ENV=production webpack --progress",
+        "build": "npm run build:gulp && npm run build:js",
+        "gh-pages": "git subtree push --prefix dist origin gh-pages"
+    },
+    "devDependencies": {
+        "autoprefixer": "^6.7.6",
+        "browser-sync": "^2.18.8",
+        "cssnano": "^3.10.0",
+        "gulp": "^3.9.1",
+        "gulp-if": "^2.0.2",
+        "gulp-postcss": "^6.3.0",
+        "gulp-rename": "^1.2.2",
+        "gulp-sass": "^3.1.0",
+        "gulp-sourcemaps": "^2.4.1",
+        "npm-run-all": "^4.0.2",
+        "webpack": "^2.2.1"
+    }
+}

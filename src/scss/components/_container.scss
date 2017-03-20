@@ -1,0 +1,30 @@
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 $gap;
+
+    & & {
+        padding: 0;
+    }
+
+    &-sm {
+        max-width: $max-width-sm;
+        @media (min-width: $max-width-sm + $gap * 2) {
+            padding: 0;
+        }
+    }
+
+    &-md {
+        max-width: $max-width-md;
+        @media (min-width: $max-width-md + $gap * 2) {
+            padding: 0;
+        }
+    }
+
+    &-lg {
+        max-width: $max-width-lg;
+        @media (min-width: $max-width-lg + $gap * 2) {
+            padding: 0;
+        }
+    }
+}

@@ -1,0 +1,31 @@
+.btn {
+    display: inline-block;
+    padding: 1.6rem 3rem;
+    border: 1px solid $grey-darker;
+    box-shadow: 0 1rem 2rem rgba(#000, 0.15);
+    text-decoration: none;
+    text-transform: uppercase;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: $transition-duration;
+
+    &:focus,
+    &:hover {
+        transform: scale(1.15);
+        border-color: $color-brand;
+        background: $color-brand;
+        color: #fff;
+    }
+
+    &-primary {
+        background: $grey-darker;
+        color: #fff;
+    }
+
+    &-secondary {
+        padding-right: 4rem;
+        padding-left: 4rem;
+        background: #fff;
+        color: #000;
+    }
+}

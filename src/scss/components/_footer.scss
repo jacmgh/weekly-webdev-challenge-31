@@ -1,0 +1,61 @@
+.footer {
+    @include screen-lg {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        line-height: 0;
+    }
+
+    &-container {
+        padding: $gap * 2.9;
+        background: $grey-darker;
+        color: #fff;
+        text-align: center;
+        @include screen-lg {
+            margin-bottom: 13rem;
+        }
+    }
+
+    &-social {
+        @include screen-lg {
+            flex: 1;
+            text-align: left;
+        }
+    }
+
+    &-copyright {
+        padding: 3rem 0;
+        @include screen-lg {
+            flex: 1;
+            padding: 0;
+        }
+    }
+
+    &-up {
+        @include screen-lg {
+            flex: 1;
+            text-align: right;
+        }
+
+        .icon-ring {
+            width: 4.5rem;
+            height: 4.5rem;
+            background: #fff;
+            cursor: pointer;
+
+            &:hover {
+                animation: up 0.5s infinite alternate;
+            }
+
+            .fa {
+                color: $grey-darker;
+            }
+        }
+    }
+}
+
+@keyframes up {
+    100% {
+        transform: translateY(-5px);
+    }
+}

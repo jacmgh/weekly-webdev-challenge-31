@@ -1,0 +1,39 @@
+// Media queries
+@mixin screen-md {
+     @media (min-width: $breakpoint-md){
+        @content;
+    }
+}
+
+@mixin screen-lg {
+     @media (min-width: $breakpoint-lg){
+        @content;
+    }
+}
+
+// Positions
+@mixin absolute-fill {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@mixin absolute-center-h {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@mixin absolute-center-v {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@mixin absolute-center {
+    @include absolute-center-h;
+    @include absolute-center-v;
+    transform: translate(-50%, -50%);
+}

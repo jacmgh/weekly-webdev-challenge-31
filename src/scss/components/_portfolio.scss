@@ -1,0 +1,77 @@
+.portfolio {
+    margin-bottom: 13rem;
+
+    h2 {
+        margin-bottom: 4rem;
+    }
+
+    &-list {
+        margin-bottom: 4.2rem;
+    }
+
+    &-item {
+        position: relative;
+        height: 0;
+        padding-bottom: 75.5%;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+        }
+
+        &::before {
+            @include absolute-fill;
+            content: "";
+            opacity: 0;
+            background: rgba(#000, 0.7) url("../img/portfolio_active_bg.png") no-repeat -220% center;
+            background-size: 64.32% auto;
+            transition: $transition-duration 0.2s;
+        }
+
+        &.is-active,
+        &:hover {
+            &::before {
+                opacity: 1;
+                background-position: -65% center;
+                transition-delay: 0s;
+            }
+        }
+    }
+
+    &-caption {
+        position: absolute;
+        left: -100%;
+        bottom: 20.7%;
+        opacity: 0;
+        transition: $transition-duration;
+
+        .portfolio-item.is-active &,
+        .portfolio-item:hover & {
+            opacity: 1;
+            left: 19.8%;
+            transition-delay: 0.1s;
+        }
+    }
+
+    &-title {
+        margin-bottom: $gap;
+        padding-right: $gap;
+        color: #fff;
+        font-size: 3rem;
+        font-weight: 700;
+        line-height: 1.2;
+    }
+
+    .icon-ring {
+        width: 3rem;
+        height: 3rem;
+        margin-right: 3px;
+        border-width: 2px;
+
+        &:hover {
+            .fa {
+                color: $color-text;
+            }
+        }
+    }
+}

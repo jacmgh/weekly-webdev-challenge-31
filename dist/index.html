@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weekly WebDev Challenge 31</title>
+    <link rel="stylesheet" href="css/styles.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cormorant:500,700%7CMontserrat:700">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="container container-lg">
+            <a class="navbar-logo" href="#">mealex.</a>
+            <ul class="navbar-menu">
+                <li class="navbar-item">
+                    <a href="#intro">Home</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="#about">About</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="#service">Service</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="#portfolio">Portfolio</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+            <button type="button" class="navbar-hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+    <div class="navbar-dim"></div>
+    <!-- /NAVBAR -->
+
+    <!-- INTRO -->
+    <div class="target" id="intro"></div>
+    <section class="intro-container">
+        <div class="container container-lg intro">
+            <div class="row">
+                <div class="col-md-6 intro-description-container">
+                    <div class="intro-description">
+                        <h1>
+                            Alex Vidal
+                            <small>Full Stack Developer</small>
+                        </h1>
+                        <a class="btn btn-primary" href="#">Hire me</a>
+                        <a class="btn btn-secondary" href="#">Explore more</a>
+                    </div>
+                    <div class="intro-description-rectangle"></div>
+                </div>
+                <div class="col-md-6">
+                    <div class="intro-hero">
+                        <img src="img/intro_hero.png" alt="Alex Vidal">
+                        <div class="intro-hero-rectangle"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /INTRO -->
+
+    <!-- ABOUT -->
+    <section class="reveal-fade container container-sm about">
+        <div class="target" id="about"></div>
+        <h2>About</h2>
+        <p class="about-description">Hello! I'm Alex, a full stuck developer, a Ruby enthusiast, and a guy slighty obsessed for code quality. Also I'm a co-founder of pykod.com. I'm currently available for freelance work. If you have a project that you want to get started or think
+            you need my help with something, then get in touch.</p>
+        <a class="btn btn-primary" href="#">Download my CV</a>
+    </section>
+    <!-- /ABOUT -->
+
+    <!-- SKILLS -->
+    <section class="container container-lg skills">
+        <h2>My skills</h2>
+        <div class="row">
+            <div class="col-md-6 col-lg-4">
+                <h3 class="skills-name">HTML/CSS</h3>
+                <div class="skills-meter">
+                    <div class="skills-meter-value" data-value="93"></div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <h3 class="skills-name">JavaScript</h3>
+                <div class="skills-meter">
+                    <div class="skills-meter-value" data-value="65"></div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <h3 class="skills-name">PHP</h3>
+                <div class="skills-meter">
+                    <div class="skills-meter-value" data-value="75"></div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <h3 class="skills-name">Python</h3>
+                <div class="skills-meter">
+                    <div class="skills-meter-value" data-value="57"></div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <h3 class="skills-name">Ruby</h3>
+                <div class="skills-meter">
+                    <div class="skills-meter-value" data-value="97"></div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <h3 class="skills-name">Java</h3>
+                <div class="skills-meter">
+                    <div class="skills-meter-value" data-value="93"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /SKILLS -->
+
+    <!-- SERVICES -->
+    <div class="target" id="service"></div>
+    <section class="services-container">
+        <div class="container container-lg services">
+            <div class="reveal-fade row services-content">
+                <div class="col-sm-12">
+                    <h2>What I do</h2>
+                </div>
+                <div class="col-lg-4 services-item">
+                    <span class="services-thumbnail-frontend"></span>
+                    <h3 class="services-name">Front-end</h3>
+                    <p class="services-description">As a javascript developer, I have experience in HTML5 and CSS3 techniques working with jQuery or more advanced javascript MVC frameworks such as angular</p>
+                </div>
+                <div class="col-lg-4 services-item">
+                    <span class="services-thumbnail-backend"></span>
+                    <h3 class="services-name">Back-end</h3>
+                    <p class="services-description">Utilising php frameworks such as Zend or creating bespoke code, I've written services supporting thousands of users, including REST APIs, e-learning applications and more.</p>
+                </div>
+                <div class="col-lg-4 services-item">
+                    <span class="services-thumbnail-consultancy"></span>
+                    <h3 class="services-name">Consultancy</h3>
+                    <p class="services-description">As well as providing development services, I can also help you decide strategic roadmaps via consultancy services.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /SERVICES -->
+
+    <!-- PORTFOLIO -->
+    <div class="target" id="portfolio"></div>
+    <section class="container container-lg portfolio">
+        <h2>My recent works</h2>
+        <div class="row portfolio-list">
+            <div class="col-md-6 col-lg-4">
+                <figure class="reveal-sequence-1 portfolio-item">
+                    <img src="img/portfolio_1.jpg" alt="Description of work #1">
+                    <figcaption class="portfolio-caption">
+                        <h3 class="portfolio-title">Project Title</h3>
+                        <div class="portfolio-links">
+                            <a class="icon-ring" href="#" title="View">
+                                <span class="fa fa-eye" aria-hidden="true"></span>
+                                <span class="screenreader">View</span>
+                            </a>
+                            <a class="icon-ring" href="#" title="Link">
+                                <span class="fa fa-link" aria-hidden="true"></span>
+                                <span class="screenreader">Link</span>
+                            </a>
+                            <a class="icon-ring" href="#" title="Share">
+                                <span class="fa fa-share-alt" aria-hidden="true"></span>
+                                <span class="screenreader">Share</span>
+                            </a>
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <figure class="reveal-sequence-2 portfolio-item">
+                    <img src="img/portfolio_2.jpg" alt="Description of work #2">
+                    <figcaption class="portfolio-caption">
+                        <h3 class="portfolio-title">Project Title</h3>
+                        <div class="portfolio-links">
+                            <a class="icon-ring" href="#" title="View">
+                                <span class="fa fa-eye" aria-hidden="true"></span>
+                                <span class="screenreader">View</span>
+                            </a>
+                            <a class="icon-ring" href="#" title="Link">
+                                <span class="fa fa-link" aria-hidden="true"></span>
+                                <span class="screenreader">Link</span>
+                            </a>
+                            <a class="icon-ring" href="#" title="Share">
+                                <span class="fa fa-share-alt" aria-hidden="true"></span>
+                                <span class="screenreader">Share</span>
+                            </a>
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <figure class="reveal-sequence-3 portfolio-item">
+                    <img src="img/portfolio_3.jpg" alt="Description of work #3">
+                    <figcaption class="portfolio-caption">
+                        <h3 class="portfolio-title">Project Title</h3>
+                        <div class="portfolio-links">
+                            <a class="icon-ring" href="#" title="View">
+                                <span class="fa fa-eye" aria-hidden="true"></span>
+                                <span class="screenreader">View</span>
+                            </a>
+                            <a class="icon-ring" href="#" title="Link">
+                                <span class="fa fa-link" aria-hidden="true"></span>
+                                <span class="screenreader">Link</span>
+                            </a>
+                            <a class="icon-ring" href="#" title="Share">
+                                <span class="fa fa-share-alt" aria-hidden="true"></span>
+                                <span class="screenreader">Share</span>
+                            </a>
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <figure class="reveal-sequence-4 portfolio-item">
+                    <img src="img/portfolio_4.jpg" alt="Description of work #4">
+                    <figcaption class="portfolio-caption">
+                        <h3 class="portfolio-title">Project Title</h3>
+                        <div class="portfolio-links">
+                            <a class="icon-ring" href="#" title="View">
+                                <span class="fa fa-eye" aria-hidden="true"></span>
+                                <span class="screenreader">View</span>
+                            </a>
+                            <a class="icon-ring" href="#" title="Link">
+                                <span class="fa fa-link" aria-hidden="true"></span>
+                                <span class="screenreader">Link</span>
+                            </a>
+                            <a class="icon-ring" href="#" title="Share">
+                                <span class="fa fa-share-alt" aria-hidden="true"></span>
+                                <span class="screenreader">Share</span>
+                            </a>
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <figure class="reveal-sequence-5 portfolio-item">
+                    <img src="img/portfolio_5.jpg" alt="Description of work #5">
+                    <figcaption class="portfolio-caption">
+                        <h3 class="portfolio-title">Project Title</h3>
+                        <div class="portfolio-links">
+                            <a class="icon-ring" href="#" title="View">
+                                <span class="fa fa-eye" aria-hidden="true"></span>
+                                <span class="screenreader">View</span>
+                            </a>
+                            <a class="icon-ring" href="#" title="Link">
+                                <span class="fa fa-link" aria-hidden="true"></span>
+                                <span class="screenreader">Link</span>
+                            </a>
+                            <a class="icon-ring" href="#" title="Share">
+                                <span class="fa fa-share-alt" aria-hidden="true"></span>
+                                <span class="screenreader">Share</span>
+                            </a>
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <figure class="reveal-sequence-6 portfolio-item">
+                    <img src="img/portfolio_6.jpg" alt="Description of work #6">
+                    <figcaption class="portfolio-caption">
+                        <h3 class="portfolio-title">Project Title</h3>
+                        <div class="portfolio-links">
+                            <a class="icon-ring" href="#" title="View">
+                                <span class="fa fa-eye" aria-hidden="true"></span>
+                                <span class="screenreader">View</span>
+                            </a>
+                            <a class="icon-ring" href="#" title="Link">
+                                <span class="fa fa-link" aria-hidden="true"></span>
+                                <span class="screenreader">Link</span>
+                            </a>
+                            <a class="icon-ring" href="#" title="Share">
+                                <span class="fa fa-share-alt" aria-hidden="true"></span>
+                                <span class="screenreader">Share</span>
+                            </a>
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+        <div class="text-center">
+            <button class="btn btn-secondary">Load more</button>
+        </div>
+    </section>
+    <!-- /PORTFOLIO -->
+
+    <!-- FACTS -->
+    <section class="facts">
+        <div class="container container-lg">
+            <div id="counter" class="row">
+                <div class="col-md-6 col-lg-4">
+                    <p class="facts-number counter-number">10</p>
+                    <p class="facts-description">Years Experience</p>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <p class="facts-number counter-number">120</p>
+                    <p class="facts-description">Projects Delivered</p>
+                </div>
+                <div class="col-lg-4">
+                    <p id="facts-visit-time" class="facts-number counter-number">0</p>
+                    <p class="facts-description">Seconds on this site!<br>What are you waiting for?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /FACTS -->
+
+    <!-- CONTACT -->
+    <div class="target" id="contact"></div>
+    <section class="reveal-fade container container-lg contact">
+        <h2>Contact</h2>
+        <form class="row">
+            <div class="col-lg-6">
+                <div class="contact-item">
+                    <label class="contact-label" for="name">Name</label>
+                    <input id="name" class="contact-text" type="text" name="name" required>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="contact-item">
+                    <label class="contact-label" for="email">E-mail</label>
+                    <input id="email" class="contact-text" type="email" name="email" required>
+                </div>
+            </div>
+            <div class="col-sm-12">
+                <div class="contact-item contact-item-lg">
+                    <label class="contact-label" for="message">Message</label>
+                    <textarea id="message" class="contact-text" name="message" required></textarea>
+                </div>
+            </div>
+            <div class="col-sm-12 text-center">
+                <button class="btn btn-secondary" type="submit">Hire me <span class="fa fa-paper-plane-o"></span></button>
+            </div>
+        </form>
+    </section>
+    <!-- /CONTACT -->
+
+    <!-- FOOTER -->
+    <footer class="reveal-fade footer-container">
+        <div class="container container-lg footer">
+            <div class="footer-social">
+                <a class="icon-ring" href="#" title="Facebook">
+                    <span class="fa fa-facebook" aria-hidden="true"></span>
+                    <span class="screenreader">Facebook</span>
+                </a>
+                <a class="icon-ring" href="#" title="Twitter">
+                    <span class="fa fa-twitter" aria-hidden="true"></span>
+                    <span class="screenreader">Twitter</span>
+                </a>
+                <a class="icon-ring" href="#" title="LinkedIn">
+                    <span class="fa fa-linkedin" aria-hidden="true"></span>
+                    <span class="screenreader">LinkedIn</span>
+                </a>
+                <a class="icon-ring" href="#" title="Google+">
+                    <span class="fa fa-google-plus" aria-hidden="true"></span>
+                    <span class="screenreader">Google+</span>
+                </a>
+            </div>
+            <div class="footer-copyright">
+                2017. All Rights Reserved
+            </div>
+            <div class="footer-up">
+                <span class="icon-ring" title="Up">
+                    <span class="fa fa-long-arrow-up" aria-hidden="true"></span>
+                <span class="screenreader">Up</span>
+                </span>
+            </div>
+        </div>
+    </footer>
+    <!-- /FOOTER -->
+
+    <!-- SCRIPTS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-viewport-checker/1.8.7/jquery.viewportchecker.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script src="js/scripts.min.js"></script>
+    <!-- /SCRIPTS -->
+
+</body>
+
+</html>

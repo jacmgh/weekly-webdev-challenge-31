@@ -1,0 +1,61 @@
+.services {
+    box-shadow: 0 0 75px rgba(#000, 0.25);
+    background: #fff;
+
+    &-container {
+        margin-bottom: 11.5rem;
+        background: linear-gradient(rgba(#fff, 0.5), rgba(#fff, 0.5)), url("../img/services_bg.jpg") no-repeat center top;
+        background-size: 100%;
+        padding-top: 120px;
+        text-align: center;
+        @include screen-md {
+            padding-top: 160px;
+        }
+        @include screen-lg {
+            padding-top: 245px;
+        }
+    }
+
+    h2 {
+        margin-bottom: 1rem;
+    }
+
+    &-content {
+        padding: 2rem 0 5rem;
+        @include screen-lg {
+            padding: 8.5rem 7.5rem 11.5rem;
+        }
+    }
+
+    &-item {
+        line-height: 1.68;
+    }
+
+    [class^=services-thumbnail-] {
+        display: inline-block;
+        width: 51px;
+        height: 45px;
+        margin-bottom: 0.3rem;
+        background-image: url("../img/services_thumbnails.png");
+        background-repeat: no-repeat;
+    }
+
+    &-thumbnail-backend {
+        background-position: -51px;
+    }
+
+    &-thumbnail-consultancy {
+        background-position: -102px;
+    }
+
+    &-name {
+        font-weight: 700;
+        font-size: 2.3rem;
+    }
+
+    &-description {
+        @include screen-lg {
+            padding: 0 1.3rem;
+        }
+    }
+}

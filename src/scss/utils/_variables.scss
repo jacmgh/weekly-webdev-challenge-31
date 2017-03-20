@@ -1,0 +1,44 @@
+// Color pallete
+$grey-darkest: #111;
+$grey-darker: #222;
+$grey-dark: #444;
+$grey: #777;
+$grey-light: #aaa;
+$grey-lighter: #dfdfdf;
+$grey-lightest: #e2e2e2;
+$white-darker: #f5f5f5;
+$white-dark: #fafafa;
+
+// Media queries breakpoints
+$breakpoint-md: 540px;
+$breakpoint-lg: 1000px;
+$max-width-sm: 550px;
+$max-width-md: 1024px;
+$max-width-lg: 1172px;
+
+// Gaps
+$gap: 10px;
+$gap-md: $gap * 2;
+$gap-lg: $gap * 3;
+$gap-grid: $gap-lg;
+
+// Colors
+$color-text: #000;
+$color-link: #179;
+$color-brand: #aa9075;
+$color-brand-secondary: #fff;
+
+// Fonts
+$font-family-primary: "Cormorant", Georgia, serif;
+$font-family-secondary: "Montserrat", Arial, Helvetica, sans-serif;
+$font-family-tertiary: Arial, Helvetica, sans-serif;
+
+// Borders
+$border-radius: 4px;
+
+// Transition
+$transition-duration: 0.2s;
+
+// Navbar
+$navbar-height: 60px;
+$navbar-height-lg: 116px;
